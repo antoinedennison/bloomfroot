@@ -1,0 +1,126 @@
+/* Basic Reset */
+/*
+This tells the browser to strip default spacing from everything 
+and box-sizing: border-box helps make layout more predictable 
+when you add width, padding, and borders.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+
+body {
+    font-family: sans-serif;
+    background-color: #fefefe;
+    color: #222222;
+}
+header {
+    background-color: #3a2f2f;
+    /* deep muted brown */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* Footer styling */
+.site-footer {
+    background-color: #2e2b27;
+    color: #f1f1f1;
+    padding: 40px 20px 20px;
+    font-size: 0.95rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-branding {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    color: #aaa;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px){
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+.footer-column {
+    margin-bottom: 20px;
+    text-align: center;
+    }
+}
