@@ -35,6 +35,8 @@ Navigation / Hamburger
 
 /* Style the hamburger */
 .hamburger {
+    position: relative;
+    z-index: 10;
     font-size: 28px;
     cursor: pointer;
     user-select: none;
@@ -125,7 +127,7 @@ a:hover {
 Components & Modules
 Cards, article previews
 =========================
-/*
+*/
 
 /*
 =========================
@@ -189,6 +191,8 @@ Footer Styling
     flex: 1;
     min-width: 200px;
     margin: 10px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer-column h4 {
@@ -208,10 +212,10 @@ Footer Styling
 .footer-column a {
     color: #ccc;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
-.footer-column a hover {
+.footer-column a:hover {
     color: #fff;
 }
 
@@ -222,8 +226,3 @@ Footer Styling
     padding-top: 10px;
     color: #aaa;
 }
-
-.footer-column {
-    margin-bottom: 20px;
-    text-align: center;
-    }
