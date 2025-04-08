@@ -12,8 +12,9 @@
         <div class="logo">BloomFroot</div>
         <h1>BloomFroot</h1>
         <nav>
-            <div class=""hamburger">&#9776;</div>
-            <ul class=""nav-links">
+            <!-- This is the hamburger symbol-->
+            <div class="hamburger">&#9776;</div>
+            <ul class="nav-links">
                 <li><a href="#">Health</a></li>
                 <li><a href="#">Lifestyle</a></li>
                 <li><a href="#">Beauty</a></li>
@@ -77,5 +78,13 @@
 </div>
     
 </footer>
+<!-- JavaScript for Hamburger Toggle -->
+<script> const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.navlinks');
+    hambuirger.addEventListener('click', () =>{
+        navLinks.classicList.toggle('active');
+
+    });
+</script>
 </body>
 </html>
