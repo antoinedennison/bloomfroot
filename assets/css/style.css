@@ -28,6 +28,15 @@ Navigation / Hamburger
     border-radius: 5px;
 }
 
+.main-nav {
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 1000;
+    background-color: white; /* or the site header color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* Show nav when active class is toggled */
 .nav-links.active {
     display: flex;
@@ -78,6 +87,10 @@ html, body {
     text-align: center;
     color: #3a2f2f;
     font-family: 'Raleway', Arial, san-serif;
+ }
+
+ .hero-section {
+    padding-top: 60px; /* adjust top match nav height */
  }
 /*
 =========================
