@@ -34,29 +34,37 @@
     <!-- Bootstrap JS Bundle (Includes Popper)-->
      <script src="bootstrap/bootstrap.bundle.min.js"></script>
 
-    <header class="main-header d-flex justify-content-between align-items-center p-3">
-        
-        <div class="logo">
-         <h1 class="m-0 logo-leading">
-            <a href="http://www.bloomfroot.com" class="logo-link">BloomFroot</a>
-         </h1>
-
- <!-- This is the hamburger symbol-->
- <div class="hamburger d-md-none" aria-label="Menu" role="button" tabindex="0">&#9776;</div><!--Only Show on Mobile-->
-   <nav class="main-nav d-none d-md-block">
-    <ul class="nav-links d-flex gap-3 list-unstyled m-0">
-
-
-            <!-- The Main Navigation Links-->
+     <header class="main-header">
+        <div class="header-container d-flex justify-content-between align-items-center p-3">
+          
+          <!-- Left Side: Logo -->
+          <div class="branding d-flex align-items-center gap-2">
+            <img src="/static/img/logo.png" class="logo-img" alt="BloomFroot logo" />
+            <h1 class="logo-heading m-0">
+              <a href="http://www.bloomfroot.com" class="logo-link">BloomFroot</a>
+            </h1>
+          </div>
+      
+          <!-- Right Side: Navigation -->
+          <div class="nav-wrap d-flex align-items-center">
+            <!-- Hamburger menu (mobile only) -->
+            <div class="hamburger d-md-none" aria-label="Menu" role="button" tabindex="0">&#9776;</div>
+      
+            <!-- Desktop navigation (visible on md and up) -->
+            <nav class="main-nav d-none d-md-block">
+              <ul class="nav-links d-flex gap-3 list-unstyled m-0">
                 <li><a href="#">Health</a></li>
                 <li><a href="#">Lifestyle</a></li>
                 <li><a href="#">Beauty</a></li>
                 <li><a href="#">Travel</a></li>
                 <li><a href="#">Finance</a></li>
                 <li><a href="#">Shop</a></li>
-            </ul>
-        </nav>
-    </header>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
 
     <section class="intro-text">
     <p>Come Bloom With Us.</p>
