@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="e">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +11,22 @@
     </head>
 
 <body>
+    <script src="assets/js/main.js"></script>
 
-    <!-- Bootstrap JS Bundle (includes popper)-->
+    <!-- Bootstrap JS Bundle (Includes Popper)-->
      <script src="bootstrap/bootstrap.bundle.min.js"></script>
-     <script src="assets/js/main.js"></script>
 
-    <header>
+    <header class="main-header d-flex justify-content-between align-items-center p-3">
+        <div class="logo">
+            <h1 class="m-0">BloomFroot</h1>
+            </div>
  <!-- This is the hamburger symbol-->
- <div class="hamburger">&#9776;</div>
-   <nav class="main-nav">
+ <div class="hamburger d-md-none" aria-label="Menu" role="button" tabindex="0">&#9776;</div><!--Only Show on Mobile-->
+   <nav class="main-nav d-none d-md-block">
+    <ul class="nav-links d-flex gap-3 list-unstyled m-0">
 
 
-            <!-- THe Main Navigation Links-->
-            <ul class="nav-links">
+            <!-- The Main Navigation Links-->
                 <li><a href="#">Health</a></li>
                 <li><a href="#">Lifestyle</a></li>
                 <li><a href="#">Beauty</a></li>
@@ -34,7 +37,6 @@
         </nav>
     </header>
 
-    <h1>BloomFroot</h1>
     <p>Come bloom with us.</p>
 
 
@@ -91,18 +93,24 @@
     </div>
 
 <div class="footer-bottom">
-    <p>&copy; 2025 Aden Media Group. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Aden Media Group. All rights reserved.</p>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </div>
     
 </footer>
 <!-- JavaScript for Hamburger Toggle -->
-<script> const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
+<script> 
+document.addEventListener("DOMContentLoaded", () => {
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
    
     hamburger.addEventListener('click', () =>{
         navLinks.classList.toggle('active');
 
     });
+});
 </script>
 </body>
 </html>
