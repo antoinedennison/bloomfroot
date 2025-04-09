@@ -23,6 +23,8 @@ Footer Styling
 }
 
 .footer-logo {
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
     max-width: 80px;
     margin-bottom: 10px;
 }
@@ -40,6 +42,7 @@ Footer Styling
     max-width: 1000px;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    gap: 2rem;
 }
 
 .footer-column {
@@ -74,10 +77,29 @@ Footer Styling
     color: #fff;
 }
 
-.footer-bottom {
+.footer-bottom p {
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 0.875rem;
     border-top: 1px solid #444;
     padding-top: 10px;
     color: #aaa;
 }
+
+@media screen and (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        text-align: center;
+    }
+    }
+
+    .footer-artwork {
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        width: 120px;
+        opacity: 0.9;
+    }
+
