@@ -1,0 +1,25 @@
+/*
+=========================
+Universal Reset
+=========================
+*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f5f0;
+    color: #222222;
+}
+
+/* BloomFroot Brand Palettes*/
+:root {
+    --brand-brown: #4a2f08;
+    --accent-pink: #e673a0;
+    --text-color: #222222;
+    --background-color: #f8f5f0;
+}
