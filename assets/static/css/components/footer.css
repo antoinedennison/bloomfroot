@@ -3,6 +3,7 @@
 Footer Styling
 =========================
 */
+
 .site-footer {
     background-color: #4a2f08;
     color: #f1f1f1;
@@ -17,11 +18,6 @@ Footer Styling
     align-items: center;
 }
 
-.footer-branding {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 .footer-logo {
     opacity: 0.85;
     transition: opacity 0.3s ease;
@@ -32,7 +28,7 @@ Footer Styling
 .tagline {
     font-style: italic;
     font-size: 1rem;
-    color: #ddd;
+    color: #dddddd;
 }
 
 .footer-columns {
@@ -48,14 +44,13 @@ Footer Styling
 .footer-column {
     flex: 1;
     min-width: 200px;
-    margin: 10px;
-    margin-bottom: 20px;
+    margin: 10px 10px 20px;
     text-align: center;
 }
 
 .footer-column h4 {
     margin-bottom: 10px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer-column ul {
@@ -68,21 +63,21 @@ Footer Styling
 }
 
 .footer-column a {
-    color: #ccc;
+    color: #cccccc;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer-bottom p {
     text-align: center;
     font-size: 0.875rem;
-    border-top: 1px solid #444;
+    border-top: 1px solid #444444;
     padding-top: 10px;
-    color: #aaa;
+    color: #aaaaaa;
 }
 
 @media screen and (max-width: 768px) {
@@ -93,13 +88,12 @@ Footer Styling
     .footer-column {
         text-align: center;
     }
-    }
+}
 
-    .footer-artwork {
-        position: absolute;
-        bottom: 0;
-        right: 10px;
-        width: 120px;
-        opacity: 0.9;
-    }
-
+.footer-artwork {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 120px;
+    opacity: 0.9;
+}
