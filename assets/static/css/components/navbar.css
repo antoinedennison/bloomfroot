@@ -57,7 +57,13 @@
     list-style: none;
   }
 
+  .has-dropdown {
+    position: relative;
+  }
+
   .has-dropdown .mega-menu {
+    position: absolute;
+    top: 100%;
     left: 0;
     transform: translateX(-25%);
     display: none;
