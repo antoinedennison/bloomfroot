@@ -38,9 +38,18 @@
   .nav-links li a {
     color: var(--color-text);
     text-decoration: none;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 600;
   }
   
   .nav-links li a:hover {
     color: var(--accent-primary);
+  }
+
+  .nav-links li {
+    margin:0 1.5rem; /* Increases Hrizontal Spacing on Main Menu */
+  }
+
+  .tagline {
+    margin-top: 1.5rem; margin-left: 2rem;
   }
