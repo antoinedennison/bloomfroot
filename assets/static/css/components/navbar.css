@@ -58,10 +58,11 @@
   }
 
   .has-dropdown .mega-menu {
+    left: 0;
+    transform: translateX(-25%);
     display: none;
     position: absolute;
     top: 100%;
- 
     background: #ffffff;
     padding: 2rem;
     width: 600px;
