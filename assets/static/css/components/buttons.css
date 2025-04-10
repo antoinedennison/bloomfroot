@@ -1,0 +1,26 @@
+/*
+=========================
+Buttons & Links
+=========================
+ */
+
+ a {
+    text-decoration: underline;
+    color: #4a2f08;
+}
+
+a:hover {
+    color: #ffffff;
+    background-color: #4a2f08;
+    transition: 0.3s ease;
+
+}
+
+.button:hover {
+    background-color: #4a2f08;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
