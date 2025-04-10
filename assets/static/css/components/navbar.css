@@ -50,6 +50,27 @@
     margin:0 1.5rem; /* Increases Hrizontal Spacing on Main Menu */
   }
 
+  /* Navigation Links Default */
+  .nav-links {
+    list-style: none;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fefefe; 
+}
+
+.nav-links a {
+    color: #444;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #e673a0;
+    text-decoration: underline;
+}
+
   .tagline {
     margin-top: 1.5rem; margin-left: 2rem;
   }

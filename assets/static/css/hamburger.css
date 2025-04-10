@@ -1,0 +1,11 @@
+/* Hamburger base (hidden on desktop) */
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    z-index: 10;
+    position: relative;
+}

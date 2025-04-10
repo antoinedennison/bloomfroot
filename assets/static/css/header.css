@@ -1,0 +1,33 @@
+/* 
+=========================
+Header & Navigation 
+=========================
+*/
+
+header {
+    background-color: #3a2f2f;
+/* deep muted brown */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-header h1,
+.logo h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0;
+}
+
+.main-nav {
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 1000;
+    background-color: white; /* or the site header color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

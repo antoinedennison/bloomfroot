@@ -1,0 +1,40 @@
+/*
+=========================
+Mobile Styles
+=========================
+ */
+
+ @media screen and (max-width: 768px) {
+    .footer-columns {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fefefe;
+        border-radius: 5px;
+        z-index: 9;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
