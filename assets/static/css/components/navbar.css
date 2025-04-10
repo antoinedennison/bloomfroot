@@ -62,27 +62,28 @@
   }
 
   .has-dropdown .mega-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    transform: translateX(-25%);
     display: none;
     position: absolute;
     top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background: #ffffff;
     padding: 2rem;
     width: 600px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     flex-wrap: wrap;
-  }
-
+}
   .has-dropdown:hover .mega-menu {
     display: flex;
+    opacity: 1;
+    visibility: visible;
   }
 
   .mega-menu {
-    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 
   .mega-column h4 {
