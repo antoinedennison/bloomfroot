@@ -24,10 +24,10 @@ header {
 }
 
 .main-nav {
-    position: fixed;
-    top:0;
-    width:100%;
+    position: relative; /* or remove it altogether */
+    top: 0;
+    width: 100%;
     z-index: 1000;
-    background-color: white; /* or the site header color */
+    background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+  }
