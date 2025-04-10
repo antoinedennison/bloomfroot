@@ -12,7 +12,7 @@ Universal Reset
 html, body {
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f8f5f0;
+    background: linear-gradient (to bottom, #f8f5f0 100% #4a2f08 50%, #814f1a 100%);
     color: #222222;
 }
 
