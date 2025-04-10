@@ -5,12 +5,6 @@
     border-bottom: 1px solid var(--color-border);
   }
   
-  .logo-img {
-    height: 40px;
-    width: auto;
-    display: block;
-  }
-  
   .logo-heading {
     font-size: 1.5rem;
   }
@@ -51,13 +45,66 @@
   }
 
   /* Navigation Links Default */
+
+  /*Begin Mega-Menu Styles */
+  
   .nav-links {
+    display: flex;
+    align-items: center;
+    position: relative;
     list-style: none;
     gap: 20px;
     padding: 10px;
     border-radius: 5px;
     background-color: #fefefe; 
 }
+
+  .nav-links li {
+    position: relative;
+    list-style: none;
+  }
+
+  .has-dropdown .mega-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    padding: 2rem;
+    width: 600px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0, 0.1);
+    z-index: 1000;
+    flex-wrap: wrap;
+  }
+
+  .has-dropdown:hover .mega-menu {
+    display: flex;
+  }
+
+  .mega-menu {
+    transition: all 0.3s ease;
+  }
+
+  .mega-column h4 {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: #333333;
+  }
+
+  .mega-column a {
+    display: block;
+    color: #666666;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .mega-column  a:hover {
+    color: #000000;
+  }
+
+/* End Mega Menu Styles */
+
 
 .nav-links a {
     color: #444;
